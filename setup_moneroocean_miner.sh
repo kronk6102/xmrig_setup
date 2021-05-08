@@ -40,8 +40,8 @@ if [ -z $XMRIG_EXE ]; then
   exit 1
 fi
 
-if ! [ -f ./config.json ]; then
-  echo "ERROR: Please make sure a template config.json file is in this directory, before running."
+if ! [ -f ./config-template.json ]; then
+  echo "ERROR: Please make sure a template config-template.json file is in this directory, before running."
   echo "       You can get a template config file from the latest MoneroOcean/xmrig release."
   exit 1
 fi
