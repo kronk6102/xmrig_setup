@@ -72,6 +72,10 @@ if ! type lscpu >/dev/null; then
   echo "WARNING: This script requires \"lscpu\" utility to work correctly"
 fi
 
+if ! type bc >/dev/null; then
+  echo "WARNING: This script requires \"bc\" utility to work correctly"
+fi
+
 # calculating port
 
 CPU_THREADS=$(nproc)
