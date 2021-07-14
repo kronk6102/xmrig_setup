@@ -69,11 +69,13 @@ if ! type curl >/dev/null; then
 fi
 
 if ! type lscpu >/dev/null; then
-  echo "WARNING: This script requires \"lscpu\" utility to work correctly"
+  echo "ERROR: This script requires \"lscpu\" utility to work correctly"
+  exit 1
 fi
 
 if ! type bc >/dev/null; then
-  echo "WARNING: This script requires \"bc\" utility to work correctly"
+  echo "ERROR: This script requires \"bc\" utility to work correctly"
+  exit 1
 fi
 
 # calculating port
